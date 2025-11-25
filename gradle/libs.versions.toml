@@ -1,0 +1,38 @@
+[versions]
+cloche = "0.16.14"
+compose = "1.7.3"
+
+kotlin = "2.1.21"
+kotlin-neoforge = "5.10.0"
+kotlin-fabric = "1.13.6+kotlin.2.2.20"
+
+minecraft = "1.21.1"
+
+parchment = "2024.11.17"
+
+neoforge-loader = "21.1.213"
+
+fabric-loader = "0.17.2"
+fabric-api = "0.116.6"
+
+architectury = "13.0.8"
+
+klib = "0.0.1-SNAPSHOT"
+jade = "15.10.2"
+
+[libraries]
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+kotlin-neoforge = { module = "thedarkcolour:kotlinforforge-neoforge", version.ref = "kotlin-neoforge" }
+kotlin-fabric = { module = "net.fabricmc:fabric-language-kotlin", version.ref = "kotlin-fabric" }
+
+architectury-common = { module = "dev.architectury:architectury", version.ref = "architectury" }
+architectury-neoforge = { module = "dev.architectury:architectury-neoforge", version.ref = "architectury" }
+architectury-fabric = { module = "dev.architectury:architectury-fabric", version.ref = "architectury" }
+
+klib = { module = "xyz.milosworks:klib", version.ref = "klib" }
+jade = { module = "maven.modrinth:jade", version.ref = "jade" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+
+cloche = { id = "earth.terrarium.cloche", version.ref = "cloche" }
