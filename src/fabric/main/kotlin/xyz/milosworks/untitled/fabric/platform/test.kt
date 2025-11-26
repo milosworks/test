@@ -1,3 +1,3 @@
 package xyz.milosworks.untitled.fabric.platform
 
-actual fun Platform(): Unit = Unit
+actual fun test(): Unit = Unit

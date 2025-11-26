@@ -82,7 +82,7 @@ cloche {
 
         dependencies {
 //            modImplementation(libs.kotlin.neoforge)
-            modImplementation(libs.architectury.neoforge)
+//            modImplementation(libs.architectury.neoforge)
 
 //            modImplementation(libs.jade) {
 //                version { strictly("${libs.versions.jade.get()}+neoforge") }
@@ -119,7 +119,7 @@ cloche {
 
             modImplementation(libs.kotlin.fabric)
 
-            modImplementation(libs.architectury.fabric)
+//            modImplementation(libs.architectury.fabric)
 
 //            modImplementation(libs.jade) {
 //                version { strictly("${libs.versions.jade.get()}+fabric") }
