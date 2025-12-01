@@ -84,7 +84,7 @@ cloche {
         }
 
         dependencies {
-//            modImplementation(libs.kotlin.neoforge)
+            modImplementation(libs.kotlin.neoforge)
 //            modImplementation(libs.architectury.neoforge)
 
 //            modImplementation(libs.jade) {
@@ -106,11 +106,11 @@ cloche {
 
         metadata {
             entrypoint("main") {
-                value = "xyz.milosworks.untitled.fabric.UntitledFabric"
+                value = "xyz.milosworks.untitled.UntitledFabric"
                 adapter = "kotlin"
             }
             entrypoint("client") {
-                value = "xyz.milosworks.untitled.fabric.UntitledFabric"
+                value = "xyz.milosworks.untitled.UntitledFabric"
                 adapter = "kotlin"
             }
 
