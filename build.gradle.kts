@@ -1,3 +1,6 @@
+@file:OptIn(InternalKotlinGradlePluginApi::class)
+
+import org.jetbrains.kotlin.gradle.InternalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -37,7 +40,7 @@ repositories {
 }
 
 dependencies {
-    implementation(libs.klib)
+//    implementation(libs.klib)
 }
 
 cloche {
@@ -145,6 +148,9 @@ kotlin {
 }
 
 tasks.withType<KotlinCompile> {
+    println(multiplatformStructure.fragments.get().joinToString("\n"))
+    println(multiplatformStructure.refinesEdges.get().joinToString("\n"))
+
     compilerOptions {
         freeCompilerArgs.addAll(
             "-Xmulti-platform",
